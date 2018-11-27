@@ -23,19 +23,6 @@ client.on('message', message => {
 });
      
        
-       client.on('message', message => {
-         if(!message.member.hasPermission("ADMINISTRATOR")) return;
-      const sayMessage = args.join(" ");
-      message.delete().catch();
-      message.channel.send(sayMessage);
-
-}
-
-module.exports.help = {
-  name: "say"
-}
-});
-
 client.on('message', message => {
     if(message.content === '-مبلغ'){
         message.channel.send('#credits')
