@@ -29,6 +29,17 @@ client.on('message', message => {
     }
 });
 
+
+client.on('message', message => {
+	if (message) return undefined;
+    let msg = message.content.toLowerCase();
+	let command = toLowerCase();
+        
+    }
+});
+
+
+
 client.on('message', message => {
     if(message.content === '-ريب'){
         message.channel.send('#credits')
