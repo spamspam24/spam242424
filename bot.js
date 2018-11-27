@@ -1,7 +1,6 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 const client2 = new Discord.Client();
-const prefix = '.';
 
 client.on('ready', () => {
    console.log(`----------------`);
@@ -30,16 +29,6 @@ client.on('message', message => {
     }
 });
 
-
-client.on('message', message => {
-	if (message) return undefined;
-	
-    let msg = message.content.toLowerCase();
-	let args = message.content.slice(prefix.length).trim().split(' ');
-	let command = args.shift().toLowerCase();
-        
-    }
-});
 
 
 client.on('message', message => {
